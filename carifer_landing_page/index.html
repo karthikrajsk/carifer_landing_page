@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carifer Landing Page</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="icon" type="image/x-icon"
+        href="https://www.carifer.com/wp-content/uploads/2022/01/cropped-favpng_logo-linkedin-icon-32x32.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+
+<body>
+    <script>
+        AOS.init();
+
+        $(document).ready(function () {
+            const speed = 200;
+            $('.count').each(function () {
+                const $this = $(this);
+                const target = +$this.data('target');
+
+                const updateCount = () => {
+                    const count = +$this.text();
+                    const increment = target / speed;
+
+                    if (count < target) {
+                        $this.text(Math.ceil(count + increment));
+                        setTimeout(updateCount, 50);
+                    } else {
+                        $this.text(target);
+                    }
+                };
+                updateCount();
+            });
+        });
+
+    </script>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-4 justify-content-between">
+
+        <a class="fixed-button-container" href>
+            <div class="fixed-button"><i class="bi bi-chat-square-fill"></i></div>
+        </a>
+        <div>
+            <img src="https://www.carifer.com/wp-content/uploads/elementor/thumbs/Carifer_logo_2023-q7p4fyf02vcdyniosrkoa7cdubso5wvx7h4qield8o.png"
+                style="align-self: center;cursor: pointer;">
+        </div>
+        <button class="navbar-toggler rounded-0" type="button" onclick="toggleSideNav()">
+            <img src="assets/img/hamburger.png" alt="">
+        </button>
+        <div style="padding-right: 300px;">
+            <ul class="menu-list">
+                <li><a href="home.html" class="active">HOME</a></li>
+                <li class="dropdown">
+                    <a href="services.html">SERVICES &nbsp;<i class="bi bi-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="#">CONSULTING-SERVICES</a>
+                        <a href="#">SOFTWARE-DEVELOPMENT</a>
+                        <a href="#">QA-SERVICES</a>
+                        <a href="#">UI-UX</a>
+                        <a href="#">IT-MANAGEMENT</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="products.html">PRODUCTS &nbsp;<i class="bi bi-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="#">SMART-METER</a>
+                        <a href="#">GIO-SPATIAL</a>
+                    </div>
+                </li>
+                <li><a href="hire-us.html">HIRE-US</a></li>
+                <li class="dropdown">
+                    <a href="about-us.html">ABOUT US &nbsp;<i class="bi bi-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="#">ABOUT US</a>
+                        <a href="#">CAREERS</a>
+                        <a href="#">INTERNSHIP</a>
+                    </div>
+                </li>
+                <li><a href="contact-us.html">CONTACT US</a></li>
+                <li><a href="jobs.html">JOBS</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="image-container">
+        <div class="image-shadow"></div>
+        <div class="text-container w-100">
+            <div>
+                <h1 class="text-light image-headline">Reliable
+                    Technology Provider</h1>
+                <p class="text-light">We are a technology consulting and development services provider that helps
+                    high-growth and established companies innovate, scale, and transform.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row" style="margin-top: 100px;">
+            <div class="col-md-6 col-sm-12">
+                <img src="https://www.carifer.com/wp-content/uploads/2024/03/6155808-1024x1024.jpg" alt=""
+                    style="width: 100%;">
+            </div>
+            <div class="col-md-5 col-sm-12">
+                <div class="my-4">
+                    <h1 style="font-family: sans-serif;font-weight: 700;">Let Us Be Your Preferred IT Partner</h1>
+                    <p class="text-secondary mt-4 mb-5" style="text-align: justify;">Carifer is trusted global custom
+                        software development company offering services in the area of
+                        enterprise IoT Technologies, Geo Spatial solutions, BioMetric, ERP solutions, mobility solutions
+                        and
+                        manged IT services.</p>
+                </div>
+                <div class="line-container my-5">
+                    <div class="line-container-bordered">
+                        <p style="font-weight: 500;"><em> As one of the speclized IT Service providers, we have experts
+                                and talented engineers who transform technology into productivity and increased
+                                economy.</em></p>
+                    </div>
+                </div>
+                <ul style="list-style: none;padding-left: 0;line-height: 35px;" class="my-4 tick-list">
+                    <li><i class="bi bi-check"></i> We are committed to providing quality IT</li>
+                    <li><i class="bi bi-check"></i> Provided by experts to help challenge critical activities</li>
+                    <li><i class="bi bi-check"></i> Really know the true needs and expectations of customers</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row justify-content-center text-center mb-5">
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <img src="assets/img/team.png" alt="">
+                <div class="d-flex justify-content-center py-2">
+                    <h1 style="color: #0772C1;font-weight: 900;" class="ps-2 count" data-target="26">0</h1>
+                    <div class="align-self-center ps-2 pb-2">
+                        <img src="assets/img/plus-symbol-button.png" alt="">
+                    </div>
+                </div>
+                <p class="text-secondary">Satisfied Clients</p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <img src="assets/img/send.png" alt="">
+                <div class="d-flex justify-content-center py-2">
+                    <h1 style="color: #0772C1;font-weight: 900;" class="ps-2 count" data-target="84">0</h1>
+                    <div class="align-self-center ps-2 pb-2">
+                        <img src="assets/img/plus-symbol-button.png" alt="">
+                    </div>
+                </div>
+                <p class="text-secondary">Completed Projects</p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <img src="assets/img/like.png" alt="">
+                <div class="d-flex justify-content-center py-2">
+                    <h1 style="color: #0772C1;font-weight: 900;" class="ps-2 count" data-target="25">0</h1>
+                    <div class="align-self-center ps-2 pb-2">
+                        <img src="assets/img/plus-symbol-button.png" alt="">
+                    </div>
+                </div>
+                <p class="text-secondary">Yrs of Collective Exp</p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <img src="assets/img/gear-assembly.png" alt="">
+                <div class="d-flex justify-content-center py-2">
+                    <h1 style="color: #0772C1;font-weight: 900;" class="ps-2 count" data-target="46">0</h1>
+                    <div class="align-self-center ps-2 pb-2">
+                        <img src="assets/img/plus-symbol-button.png" alt="">
+                    </div>
+                </div>
+                <p class="text-secondary">Professional Team</p>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <h1 class="fw-bold text-center">Our Services</h1>
+            <div class="row g-5 mt-3 mb-5">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="card border-0 " data-aos="fade-up" data-aos-duration="1000">
+                        <div class="card-header bg-white">
+                            <img src="https://www.carifer.com/wp-content/uploads/2024/03/5490520-1024x1024.jpg"
+                                style="width: 100%;">
+                        </div>
+                        <div class="card-body text-light" style="background-color: #0772C1;">
+                            <div class="d-flex">
+                                <div>
+                                    <img src="assets/img/paper.png" alt="" width="70%">
+                                </div>
+                                <div>
+                                    <h5>Consulting Services</h5>
+                                    <p>Business & Technical</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card-footer bg-white pb-5 pt-4">
+                            <a href="#">view details <i class="bi bi-arrow-right hover-text"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="card border-0 " data-aos="fade-up" data-aos-duration="1000">
+                        <div class="card-header bg-white">
+                            <img src="https://www.carifer.com/wp-content/uploads/2024/03/3469578-1024x1024.jpg"
+                                style="width: 100%;">
+                        </div>
+                        <div class="card-body text-light" style="background-color: #0772C1;">
+                            <div class="d-flex">
+                                <div>
+                                    <img src="assets/img/cloud.png" alt="" width="70%">
+                                </div>
+                                <div>
+                                    <h5>Quality Assurance</h5>
+                                    <p>Testing</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white pb-5 pt-4">
+                            <a href="#">view details <i class="bi bi-arrow-right hover-text"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="card border-0 " data-aos="fade-up" data-aos-duration="1000">
+                        <div class="card-header bg-white">
+                            <img src="https://www.carifer.com/wp-content/uploads/2024/03/3014268-1024x1024.jpg"
+                                style="width: 100%;">
+                        </div>
+                        <div class="card-body text-light" style="background-color: #0772C1;">
+                            <div class="d-flex">
+                                <div>
+                                    <img src="assets/img/website.png" alt="" width="70%">
+                                </div>
+                                <div>
+                                    <h5>Dedicated Team</h5>
+                                    <p>Autonomous Expert Teams</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white pb-5 pt-4">
+                            <a href="#">view details <i class="bi bi-arrow-right hover-text"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="card border-0 " data-aos="fade-up" data-aos-duration="1000">
+                        <div class="card-header bg-white">
+                            <img src="https://www.carifer.com/wp-content/uploads/2024/03/6664783-1024x1024.jpg"
+                                style="width: 100%;">
+                        </div>
+                        <div class="card-body text-light" style="background-color: #0772C1;">
+                            <div class="d-flex">
+                                <div>
+                                    <img src="assets/img/cloud.png" alt="" width="70%">
+                                </div>
+                                <div>
+                                    <h5>Software Development</h5>
+                                    <p>Web and Mobile Apps</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white pb-5 pt-4">
+                            <a href="#">view details <i class="bi bi-arrow-right hover-text"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="card border-0 " data-aos="fade-up" data-aos-duration="1000">
+                        <div class="card-header bg-white">
+                            <img src="https://www.carifer.com/wp-content/uploads/2024/03/3497655-1024x1024.jpg"
+                                style="width: 100%;">
+                        </div>
+                        <div class="card-body text-light" style="background-color: #0772C1;">
+                            <div class="d-flex">
+                                <div>
+                                    <img src="assets/img/website.png" alt="" width="70%">
+                                </div>
+                                <div>
+                                    <h5>UI / UX</h5>
+                                    <p>Crafting User Experience</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white pb-5 pt-4">
+                            <a href="#">view details <i class="bi bi-arrow-right hover-text"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="card border-0 " data-aos="fade-up" data-aos-duration="1000">
+                        <div class="card-header bg-white">
+                            <img src="https://www.carifer.com/wp-content/uploads/2024/03/scrum-method-concept-illustration_114360-13013.jpg"
+                                style="width: 100%;">
+                        </div>
+                        <div class="card-body text-light" style="background-color: #0772C1;">
+                            <div class="d-flex">
+                                <div>
+                                    <img src="assets/img/paper.png" alt="" width="70%">
+                                </div>
+                                <div>
+                                    <h5>IT Management</h5>
+                                    <p>Manage your servers</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white pb-5 pt-4">
+                            <a href="#">view details <i class="bi bi-arrow-right hover-text"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h1 class="fw-bold text-center">Our Products</h1>
+            <div class="row my-5 justify-content-center g-5">
+                <div class="col-md-5 col-sm-12">
+                    <div class="my-4">
+                        <h1 style="font-family: sans-serif;font-weight: 700;">GeoSpatial Solution</h1>
+                        <p class="mt-4 mb-5" style="text-align: justify;">Carifer is an experienced,
+                            innovative and progressive consulting organisation specialising in land administration,
+                            urban planning, policy and tenure. We work with various public, private and citizen-led
+                            stakeholders to research, design, develop, manage and monitor land sector projects. We
+                            employ the best international and nationally based experts to consult and co-design land
+                            administration solutions, from documenting customary tenure with communities to integrated
+                            national information system strategies.</p>
+                    </div>
+                    <ul style="list-style: none;padding-left: 0;line-height: 35px;" class="my-4 tick-list row">
+                        <li class="col-lg-6"><i class="bi bi-check"></i> Land administration</li>
+                        <li class="col-lg-6"><i class="bi bi-check"></i> Digital Cadastral maps</li>
+                        <li class="col-lg-6"><i class="bi bi-check"></i> Urban planning</li>
+                        <li class="col-lg-6"><i class="bi bi-check"></i> Land use policy</li>
+                    </ul>
+                    <div class="text-center">
+                        <button class="btn px-4 py-3 rounded-0 learn-more-btn">LEARN MORE</button>
+                    </div>
+                </div>
+                <div class="col-md-5 col-sm-12">
+                    <img src="https://www.carifer.com/wp-content/uploads/elementor/thumbs/sight-seeing-from-twenty-thousand-feet-aerial-vie-2021-08-31-09-05-37-utc-scaled-pjae1zhreka941bbk7gnavdkeme3t4f97m425jbhxw.jpg"
+                        alt="" style="width: 100%;">
+                </div>
+            </div>
+            <div class="row my-5 justify-content-center g-5">
+                <div class="col-md-5 col-sm-12">
+                    <img src="https://www.carifer.com/wp-content/uploads/elementor/thumbs/city-4317139_1920-800x559-1-pj9md6l9shqiyv856u0klwt1vhi80e6ohwc3ovaefo.jpg"
+                        alt="" style="width: 100%;">
+                </div>
+                <div class="col-md-5 col-sm-12">
+                    <div class="my-4">
+                        <h1 style="font-family: sans-serif;font-weight: 700;">Smart Meter Solution</h1>
+                        <p class="mt-4 mb-5" style="text-align: justify;">We offer a secure and scalable solution to
+                            resolve the challenges in a metering infrastructure. Our Smart Metering solution acquires,
+                            manages and reports energy data from the electricity and water meters such as water flow,
+                            velocity, pressure etc. These critical info enable energy managers & utilities to easily
+                            target the consumption pattern and also helps them perform demand planning. It paves the way
+                            to reduce consumption, thereby saving valuable energy resources. </p>
+                    </div>
+                    <ul style="list-style: none;padding-left: 0;line-height: 35px;" class="my-4 tick-list row">
+                        <li class="col-lg-6"><i class="bi bi-check"></i> Remote Meter Reading</li>
+                        <li class="col-lg-6"><i class="bi bi-check"></i> Reporting</li>
+                        <li class="col-lg-6"><i class="bi bi-check"></i> Monitoring</li>
+                        <li class="col-lg-6"><i class="bi bi-check"></i> Escalations</li>
+                        <li class="col-lg-6"><i class="bi bi-check"></i> Fault Management</li>
+                        <li class="col-lg-6"><i class="bi bi-check"></i> Predictive maintenance</li>
+                    </ul>
+                    <div class="text-center">
+                        <button class="btn px-4 py-3 rounded-0 learn-more-btn">LEARN MORE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h1 class="fw-bold text-center">Interested in our services?</h1>
+            <div class="row my-4 justify-content-center g-5">
+                <div class="col-md-5 col-sm-12">
+                    <form action="">
+                        <div class="mb-3">
+                            <label for="firstName" class="form-label">First Name</label>
+                            <input type="text" class="form-control form-control-lg rounded-0" id="firstName"
+                                placeholder="First Name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+                            <input type="email" class="form-control form-control-lg rounded-0" id="email"
+                                placeholder="Email Address">
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" class="form-control form-control-lg rounded-0" id="subject"
+                                placeholder="Subject">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Your Message <span
+                                    class="text-danger">*</span></label>
+                            <textarea class="form-control form-control-lg rounded-0" id="message" rows="3"
+                                placeholder="Your Message"></textarea>
+                        </div>
+                    </form>
+                    <div class="text-start">
+                        <button class="btn px-4 py-3 rounded-0 submit-btn">SUBMIT FORM</button>
+                    </div>
+                </div>
+                <div class="col-md-5 col-sm-12">
+                    <p class="text-center">Fill the form for contacting us “or” you can use the message icon on bottom
+                        of our page to chat with us instantly!</p>
+                    <img src="https://www.carifer.com/wp-content/uploads/2024/03/Contact-e1710482466875.jpg" alt=""
+                        style="width: 100%;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="px-5">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12 text-center footer-logo">
+                <img src="https://www.carifer.com/wp-content/uploads/2024/03/Carifer_logo1.png" alt=""
+                    style="cursor: pointer;">
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 footer-link-sec">
+                <h4 class="text-light" style="font-size: 20px;">Navigation</h4>
+                <ul style="list-style: none;padding: 0;line-height: 35px;" class="my-3">
+                    <li><a href="about.html" class="text-light">ABOUT</a></li>
+                    <li><a href="services.html" class="text-light">SERVICES</a></li>
+                    <li><a href="contact.html" class="text-light">CONTACT</a></li>
+                    <li><a href="career.html" class="text-light">CAREER</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 footer-contact">
+                <h4 class="text-light" style="font-size: 20px;">Contact Us</h4>
+                <p class="my-3 text-light">96, Perundurai Main Road, Near SBI Bank URC Nagar Branch, Chinna
+                    Sengodampalayam, Erode, Tamil
+                    Nadu – 638011.</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 footer-social-links">
+                <h4 class="text-light" style="font-size: 20px;">Get Connected</h4>
+                <ul class="p-0 my-3" style="display: inline-flex;list-style: none;gap: 15px;">
+                    <li><img src="assets/img/facebook-app-symbol.png" alt=""></li>
+                    <li><img src="assets/img/instagram.png" alt=""></li>
+                    <li><img src="assets/img/linkedin.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
